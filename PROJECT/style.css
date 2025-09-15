@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  margin: 0 10px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  padding: 40px;
+  min-height: 50vh;
+}
+#mindset {
+  background: #f4f4f4;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+}
+.card img {
+  width: 100%;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+form input, form textarea {
+  margin: 5px 0;
+  padding: 8px;
+}
+form button {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.top-btn {
+  color: lightblue;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar { display: none; }
+  body::before { content: "Tab bar (for tablet)"; display: block; background: #444; color: white; text-align: center; padding: 10px; }
+}
+@media (max-width: 768px) {
+  body::before { content: "Hamburger menu (for phone)"; }
+}

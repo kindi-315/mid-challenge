@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <!-- Simple SVG logo -->
+      <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="20" fill="green"/>
+        <text x="25" y="30" text-anchor="middle" font-size="15" fill="white">MC</text>
+      </svg>
+    </div>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#mindset">Mindset</a></li>
+      <li><a href="#palestine">Palestine</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#footer">Bottom</a></li>
+    </ul>
+  </nav>
+
+  <!-- Introduction -->
+  <section id="intro">
+    <h1>Welcome to Midterm Challenge</h1>
+    <p>This page is created to demonstrate HTML & CSS requirements.</p>
+  </section>
+
+  <!-- Build your mindset -->
+  <section id="mindset">
+    <h2>Build Your Mindset</h2>
+    <p>This section covers half height of a laptop screen. 
+       It is designed to motivate students to think critically and creatively.</p>
+  </section>
+
+  <!-- Cards of Palestine -->
+  <section id="palestine">
+    <h2>Cards of Palestine</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Bethlehem">
+        <h3>Bethlehem</h3>
+        <p>A historic city known for its religious significance.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Hebron">
+        <h3>Hebron</h3>
+        <p>One of the oldest cities in the world.</p>
+      </div>
+      <!-- كرر باقي المدن بنفس الشكل -->
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" name="name" required><br>
+
+      <label>Subject:</label>
+      <input type="text" name="subject" required><br>
+
+      <label>Phone:</label>
+      <input type="tel" name="phone" pattern="[0-9]{10}" required><br>
+
+      <label>Email:</label>
+      <input type="email" name="email" pattern=".+@ftu\.ac\.th" required><br>
+
+      <label>Secret Word:</label>
+      <input type="password" name="secret" 
+             pattern="(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@$!%*?&]).{8,}" required><br>
+
+      <label>Message:</label>
+      <textarea name="message" required></textarea><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Midterm Challenge. All Rights Reserved.</p>
+    <a href="#top" class="top-btn">Go to Top</a>
+  </footer>
+
+</body>
+</html>
